@@ -1,11 +1,10 @@
 document.addEventListener('alpine:init', () => {
-  Alpine.data('dropdown', () => ({
-      open: false,
-    items: [
-      {id :1, Name: 'Robusta Brazil', img:'img/products/1.jpg', price: 20000}
-      {id :1, Name: 'Arabica Blend', img:'img/products/1.jpg', price: 20000}
-      {id :1, Name: 'Robusta Brazil', img:'img/products/1.jpg', price: 20000}
-    ],
-      }
-  }))
-})
+  Alpine.data('products', () => ({
+   items: [
+    { id :1, name: 'Robusta Brazil', img:'img/products/1.jpeg', price: 20000 },
+    { id :2, name: 'Arabica Blend', img:'img/products/2.jpeg', price: 25000 },
+    { id :3, name: 'Robusta Brazil', img:'img/products/3.jpeg', price: 30000 },
+     ],
+      
+  })),
+}),
