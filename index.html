@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<scribe>
+<head>
+ <scribe>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
   <!-- Alpinejs -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <!-- app -->
-<script src="src/app.js"></script>
+   <script src="src/app.js"></script>
 </head>
 
 <body>
@@ -153,76 +153,128 @@
   <!-- Menu Section end -->
 
   <!-- Products Section start -->
-  <section class="products" id="products">
-    <h2><span>Produk Unggulan</span> Kami</h2>
-    <p>"Rasa yang mendalam, aroma yang menggoda – produk unggulan kami ada di sini untuk Anda."</p>
+<section class="products" id="products">
+  <h2><span>Produk Unggulan</span> Kami</h2>
+  <p>"Rasa yang mendalam, aroma yang menggoda – produk unggulan kami ada di sini untuk Anda."</p>
 
-    <div class="row">
-      <div class="product-card">
-        <div class="product-icons">
-          <a href="#"><i data-feather="shopping-cart"></i></a>
-          <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
-        </div>
-        <div class="product-image">
-          <img src="img/products/1.jpeg" alt="Product 1">
-        </div>
-        <div class="product-content">
-          <h3>Robusta Brazil</h3>
-          <div class="product-stars">
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star"></i>
-          </div>
-          <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-        </div>
+  <div class="row">
+    <!-- Product 1 -->
+    <div class="product-card" data-product-id="1">
+      <div class="product-icons">
+        <a href="#" class="add-to-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
       </div>
-      <div class="product-card">
-        <div class="product-icons">
-          <a href="#"><i data-feather="shopping-cart"></i></a>
-          <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
-        </div>
-        <div class="product-image">
-          <img src="img/products/2.jpeg" alt="Product 1">
-        </div>
-        <div class="product-content">
-          <h3>Arabica Blend</h3>
-          <div class="product-stars">
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star"></i>
-          </div>
-          <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-        </div>
+      <div class="product-image">
+        <img src="img/products/1.jpeg" alt="Product 1">
       </div>
-      <div class="product-card">
-        <div class="product-icons">
-          <a href="#"><i data-feather="shopping-cart"></i></a>
-          <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+      <div class="product-content">
+        <h3>Robusta Brazil</h3>
+        <div class="product-stars">
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star"></i>
         </div>
-        <div class="product-image">
-          <img src="img/products/3.jpeg" alt="Product 1">
-        </div>
-        <div class="product-content">
-          <h3>Primo Passo</h3>
-          <div class="product-stars">
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star"></i>
-          </div>
-          </div>
-          <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-        </div>
+        <div class="product-price">IDR 30K <span>IDR 55K</span></div>
       </div>
     </div>
-  </section>
-  <!-- Products Section end -->
 
+    <!-- Product 2 -->
+    <div class="product-card" data-product-id="2">
+      <div class="product-icons">
+        <a href="#" class="add-to-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+      </div>
+      <div class="product-image">
+        <img src="img/products/2.jpeg" alt="Product 2">
+      </div>
+      <div class="product-content">
+        <h3>Arabica Blend</h3>
+        <div class="product-stars">
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star"></i>
+        </div>
+        <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card" data-product-id="3">
+      <div class="product-icons">
+        <a href="#" class="add-to-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+      </div>
+      <div class="product-image">
+        <img src="img/products/3.jpeg" alt="Product 3">
+      </div>
+      <div class="product-content">
+        <h3>Primo Passo</h3>
+        <div class="product-stars">
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star"></i>
+        </div>
+        <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Products Section end -->
+<!-- Cart Script -->
+<script>
+  // Initialize cart from localStorage or an empty array if not set
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  // Function to add product to the cart
+  function addToCart(productId) {
+    const productCards = document.querySelectorAll('.product-card');
+    const selectedProduct = Array.from(productCards).find(product => product.dataset.productId === productId.toString());
+
+    if (selectedProduct) {
+      const productName = selectedProduct.querySelector('h3').textContent;
+      const productPrice = selectedProduct.querySelector('.product-price').textContent.split(' ')[0]; // Extracts price
+      const productImage = selectedProduct.querySelector('.product-image img').src;
+
+      // Create a product object
+      const product = {
+        id: productId,
+        name: productName,
+        price: productPrice,
+        image: productImage
+      };
+
+      // Check if the product is already in the cart
+      const existingProductIndex = cart.findIndex(item => item.id === productId);
+      if (existingProductIndex !== -1) {
+        cart[existingProductIndex].quantity += 1; // Update quantity if already in cart
+      } else {
+        product.quantity = 1;
+        cart.push(product);
+      }
+
+      // Save the cart to localStorage
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      // Optional: Show a notification or update the cart icon to reflect added item
+      alert(`${productName} added to your cart!`);
+    }
+  }
+
+  // Event listener for "Add to Cart" buttons
+  document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const productId = e.target.closest('.product-card').dataset.productId;
+      addToCart(productId);
+    });
+  });
+</script>
   <!-- Contact Section start -->
   <section id="contact" class="contact">
     <h2><span>Kontak</span> Kami</h2>
@@ -275,58 +327,12 @@
   </footer>
   <!-- Footer end -->
 
-  <!-- Modal Box Item Detail start -->
-  <div class="modal" id="item-detail-modal">
-    <div class="modal-container">
-      <a href="#" class="close-icon"><i data-feather="x"></i></a>
-      <div class="modal-content">
-        <img src="img/products/1.jpg" alt="Product 1">
-        <div class="product-content">
-          <h3>Robusta Brazil</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, tenetur cupiditate facilis obcaecati
-            ullam maiores minima quos perspiciatis similique itaque, esse rerum eius repellendus voluptatibus!</p>
-          <div class="product-stars">
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star"></i>
-          </div>
-          <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-          <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
-        </div>
-
-        <div class="modal" id="item-detail-modal">
-          <div class="modal-container">
-            <a href="#" class="close-icon"><i data-feather="x"></i></a>
-            <div class="modal-content">
-              <img src="img/products/1.jpg" alt="Product 1">
-              <div class="product-content">
-                <h3>Arabica Blend</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, tenetur cupiditate facilis obcaecati
-                  ullam maiores minima quos perspiciatis similique itaque, esse rerum eius repellendus voluptatibus!</p>
-                <div class="product-stars">
-                  <i data-feather="star" class="star-full"></i>
-                  <i data-feather="star" class="star-full"></i>
-                  <i data-feather="star" class="star-full"></i>
-                  <i data-feather="star" class="star-full"></i>
-                  <i data-feather="star"></i>
-                </div>
-                <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-                <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
-              </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal Box Item Detail end -->
-
   <!-- Feather Icons -->
   <script>
     feather.replace()
   </script>
-
+  <!-- feather icons end -->
   <!-- My Javascript -->
   <script src="js/script.js"></script>
 </body>
-
 </html>
